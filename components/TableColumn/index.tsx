@@ -72,7 +72,7 @@ function TableColumn() {
         />
       )}
       <div
-        className=""
+        className="text-[12px] font-[400] leading-[16px] text-[#979797] mb-[8px] cursor-pointer"
         onClick={() => {
           setShowSelectProduct((prev) => !prev);
         }}

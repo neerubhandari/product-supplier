@@ -29,7 +29,7 @@ const ProductDetails = ({ productData }: { productData: IProduct[] }) => {
 
   const grandTotal = nonTaxableAmount + taxableTotal;
   return (
-    <div className="flex justify-between w-[100%]">
+    <div className="flex justify-between w-[100%] mt-[50.5px]">
       <div className="">
         <Textarea
           label="Note"
@@ -42,28 +42,28 @@ const ProductDetails = ({ productData }: { productData: IProduct[] }) => {
       </div>
 
       <div className="grid gap-[12px] w-[440px]">
-        <div className="flex justify-between">
-          <div className="font-bold">Total</div>
+        <div className="flex justify-between text-[#00171F]">
+          <div className="text-[12px] leading-[16px]">Total</div>
           <div>{totalAmount}</div>
         </div>
-        <div className="flex justify-between">
-          <div className="font-bold">Discount</div>
+        <div className="flex justify-between text-[#00171F]">
+          <div className="text-[12px] leading-[16px]">Discount</div>
           <div>{totalDiscount}</div>
         </div>
-        <div className="flex justify-between">
-          <div className="font-bold">Non-taxable Total</div>
+        <div className="flex justify-between text-[#00171F]">
+          <div className="text-[12px] leading-[16px]">Non-taxable Total</div>
           <div>{nonTaxableAmount}</div>
         </div>
-        <div className="flex justify-between">
-          <div className="font-bold">Taxable Total</div>
+        <div className="flex justify-between text-[#00171F]">
+          <div className="text-[12px] leading-[16px]">Taxable Total</div>
           <div>{taxableTotal}</div>
         </div>
         <div className="flex border-b border-[#00171F] justify-between">
-          <div className="font-bold">VAT</div>
+          <div className="text-[12px] leading-[16px]">VAT</div>
           <div>13</div>
         </div>
-        <div className="flex justify-between">
-          <div className="font-bold">Grand Total</div>
+        <div className="flex justify-between text-[#00171F] font-[500]">
+          <div className="text-[12px] leading-[16px]">Grand Total</div>
           <div>{grandTotal}</div>
         </div>
       </div>

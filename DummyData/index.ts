@@ -36,15 +36,21 @@ export const PRODUCT_INFO = [
     rate: 2300,
     discount: 230,
   },
+  {
+    id: 4,
+    item: "Yak",
+    batch: "4324A",
+    warehouse: "KTM1",
+    qty: 1,
+    rate: 2300,
+    discount: 230,
+  },
 ];
-export const PRODUCT_INFO5 = [
-  {
-    name: "Old durbar 750 ml",
-  },
-  {
-    name: "Old durbar 375 ml",
-  },
-  {
-    name: "Old durbar 175 ml",
-  },
+export const SUPPLIERS_INFO = [
+  "Olivia",
+  "Emma",
+  "Amelia",
+  "Sophia",
+  "Noah",
+  "Liam",
 ];

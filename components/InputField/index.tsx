@@ -3,10 +3,20 @@ import { Input } from "antd";
 import { InputFieldProps } from "@/types";
 import { Controller } from "react-hook-form";
 
-const InputField = ({ label, placeholder, suffixIcon, name, control, rules }: InputFieldProps) => {
+const InputField = ({
+  label,
+  placeholder,
+  suffixIcon,
+  name,
+  control,
+  rules,
+  onChange,
+  value,
+  onClick,
+}: InputFieldProps) => {
   return (
     <div className="flex flex-col">
-      <div className="text-[12px] leading-[16px] mb-[8px]" >
+      <div className="text-[12px] leading-[16px] mb-[8px]">
         {label}
         <span className="text-[#EF233C] text-[11px]">*</span>
       </div>
@@ -19,10 +29,13 @@ const InputField = ({ label, placeholder, suffixIcon, name, control, rules }: In
             {...field}
             height={10}
             placeholder={placeholder}
-            variant="filled" 
+            variant="filled"
             className="h-[48px] w-[480px] rounded-[8px] border-none"
             suffix={suffixIcon}
             style={{ width: 480 }}
+            onChange={onChange}
+            value={value}
+            onClick={onClick}
           />
         )}
       />
